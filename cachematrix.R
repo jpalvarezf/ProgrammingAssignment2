@@ -1,4 +1,5 @@
-##Set of functions to make a matrix and cache it
+## Set of functions to make a matrix and cache it
+## Derivative work from Roger Peng at https://github.com/rdpeng/ProgrammingAssignment2
 
 ## Function that creates a matrix with a set of getters and setters
 
