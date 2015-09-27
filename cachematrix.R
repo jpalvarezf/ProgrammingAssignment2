@@ -1,6 +1,15 @@
 ## Set of functions to make a matrix, solve its inverse and cache the result for further usage
 ## Derivative work from Roger Peng at https://github.com/rdpeng/ProgrammingAssignment2
 
+## Usage example
+## Make a new Matrix Object with makeCacheMatrix (the hilbert function creates a matrix, code taken form the help page of Solve)
+## hilbert <- function(n) { i <- 1:n; 1 / outer(i - 1, i, "+") }
+## myMatrix <- makeCacheMatrix(hilbert(8)); myMatrix
+## Cache the result with cacheSolve (you can call the function serveral time to check if the Matrix was cached
+## cacheSolve(myMatrix)
+## You can verify if the result was successful by making this operation and getting the identity Matrix
+## round(myMatrix$get() %*% cacheSolve(myMatrix), 3)
+
 ## Function that creates a matrix with a set of getters and setters
 makeCacheMatrix <- function(x = matrix()) {
   inverseMatrix <- NULL
